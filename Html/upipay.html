@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Upi Pay</title>
+        <style>
+            .img1 {
+            width: 50px;
+            height: 25px;
+        }
+        .section1 {
+            margin-left: 500px;
+            padding-left: 5px;
+            margin-top: 40px;
+        }
+        .box
+        {
+            width: 430px;
+            height: 70px;
+            margin-top: 0px;
+            padding-left: 10px;
+
+        }
+        .section2
+        {
+            margin-left: 500px;
+            border-radius: 5px;
+            padding-top: 10px;
+        }
+        ::placeholder
+        {
+            padding-left: 10px;
+        }
+        .btn {
+            width: 430px;
+            height: 50px;
+            background-color: red;
+            border-radius: 5px;
+            border-color: transparent;
+            color: white;
+            margin-top: 25px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #b8b8b8;
+            margin-top: 170px;
+            opacity: 0.9;
+            height: 200px;
+            margin-top: 120px;
+            padding-top: 30px;
+        }
+
+        .foot1 a,
+        .foot2 a,
+        .foot3 a,
+        .foot4 a {
+            text-decoration: none;
+            color: white;
+        }
+        .custom-select {
+            position: relative;
+            margin-top: 10px;
+            width: 200px;
+            margin: 20px;
+        }
+
+        .custom-select select {
+            display: none;
+        }
+
+        .select-styled {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+
+        .select-styled img {
+            width: 40px;
+            height: 40px;
+            margin-right: 20px;
+        }
+
+        .select-options {
+            display: none;
+            position: absolute;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            z-index: 1;
+            margin-left: -20px;
+            width: 430px;
+        }
+
+        .option {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background-color: #f4f4f4;
+        }
+        li
+        </style>
+</head>
+<body>
+    <div class="section">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/Images/logo.png" alt="" width="200" height="50" class="d-inline-block align-text-top"
+                        style="padding-left: 40px;"></a>
+                <a href="/Html/SignIn.html" style="text-decoration: none;">
+                    <h6 style="color: rgb(6, 5, 5);">Sign Out</h6>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="section1">
+        <div class="container">
+            <p >STEP 3 OF 3</p>
+            <h2>Set up UPI AutoPay</h2>
+            <p>You can change this recurring payment any time in your <br>settings.</p>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="container">
+            <div class="custom-select">
+                <div class="select-styled" style="width: 430px;height: 70px;margin-left: -20px;">
+                     <h6 style="margin-top: 15px;margin-left: 10px;">Select Your UPI app</h6>
+                </div>
+                <ul class="select-options">
+                    <option data-image="/images/BHIM.svg" class="option">BHIM</option>
+                    <option data-image="/images/paytm.png"class="option">Paytm</option>
+                    <option data-image="/images/phonepe.png" class="option">PhonePe</option>
+                    <option data-image="/images/Amazonpay.png" class="option">Amazon Pay</option>
+                    <option data-image="/images/gpay.png" class="option">Google Pay</option>
+                </ul>
+            </div>
+                <input type="text" placeholder="Enter Your UPI id" class="box"><br>
+                <a href="findupi.html">How do i find my UPI ID ?</a><br>
+                <button type="button" class="btn" style="padding-top: 10px;">Next</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="foot1">
+            <p style="color: white;">Questions? Call 000-800-919-1694</p><br>
+            <a href="FAQ.html">FAQ</a><br><br>
+            <a href="FAQ.html">Cookie Preference</a><br><br>
+        </div>
+        <div class="foot2">
+            <a href="help.html">Help Centre</a><br><br>
+            <a href="help.html">Corporate Information</a>
+        </div>
+        <div class="foot3">
+            <a href="help.html">Terms of use</a>
+        </div>
+        <div class="foot4">
+            <a href="help.html">Privacy</a>
+        </div>
+    </div>
+    <script>
+        const selectStyled = document.querySelector('.select-styled');
+    const selectOptions = document.querySelector('.select-options');
+    const options = document.querySelectorAll('.option');
+
+    selectStyled.addEventListener('click', () => {
+        selectOptions.style.display = (selectOptions.style.display === 'none' || selectOptions.style.display === '') ? 'block' : 'none';
+    });
+
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            selectStyled.innerHTML = `<img src="${option.getAttribute('data-image')}" alt="Selected Image"> ${option.textContent}`;
+            selectOptions.style.display = 'none';
+        });
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

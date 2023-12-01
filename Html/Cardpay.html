@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Cardpay</title>
+    <style>
+        .img1 {
+            width: 50px;
+            height: 25px;
+        }
+
+        .box {
+            border: 2px solid black;
+            border-radius: 2px;
+            width: 20px;
+            height: 15px;
+            margin-left: 10px;
+        }
+
+        .box1 {
+            width: 20px;
+            border-top: 2px solid black;
+            margin-left: 10px;
+            margin-top: -10px;
+        }
+
+        .line {
+            width: 6px;
+            border-top: 2px solid black;
+            margin-left: 20px;
+            margin-top: 2px;
+        }
+
+        .inp {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            border-color: thistle;
+        }
+
+        .input1 {
+            height: 50px;
+            width: 430px;
+            margin-top: 20px;
+            border-radius: 3px;
+            border: 1px solid rgb(91, 81, 81);
+        }
+
+        .Card {
+            position: absolute;
+            bottom: 8px;
+            left: 395px;
+            top: 35px;
+        }
+
+        .section1,
+        .section2,
+        .section4 {
+            margin-left: 500px;
+            padding-left: 5px;
+        }
+
+        .quest {
+            border: 2px solid black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .que {
+            margin-top: -19px;
+            margin-left: 6px;
+
+        }
+
+        .question {
+            position: absolute;
+            bottom: 8px;
+            left: 157px;
+            top: 12px;
+        }
+
+        .section3 {
+            display: flex;
+            justify-content: space-around;
+            padding-left: -80px;
+            padding-bottom: 10px;
+        }
+
+        .Cvv {
+            position: relative;
+            margin-left: -985px;
+            height: 50px;
+        }
+
+        .exp {
+            height: 50px;
+            width: 220px;
+            margin-left: -5px;
+        }
+
+        .sec5a {
+            float: right;
+            margin-top: -50px;
+        }
+
+        .section5 {
+            width: 430px;
+            height: 80px;
+            margin-top: 10px;
+            background-color: snow;
+            margin-left: 500px;
+            padding-top: 25px;
+            border-radius: 5px;
+        }
+
+        .section6 {
+            width: 450px;
+            height: 80px;
+            margin-left: 500px;
+            padding-top: 25px;
+            font-size: small;
+        }
+        .btn2 {
+            width: 430px;
+            height: 50px;
+            background-color: red;
+            border-radius: 5px;
+            border-color: transparent;
+            color: white;
+            margin-left: 500px;
+            margin-top: 25px;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: #b8b8b8;
+            margin-top: 170px;
+            opacity: 0.9;
+            height: 200px;
+            margin-top: 40px;
+        }
+
+        .foot1 a,
+        .foot2 a,
+        .foot3 a,
+        .foot4 a {
+            text-decoration: none;
+            color: white;
+        }
+        ::placeholder
+        {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/Images/logo.png" alt="" width="200" height="50" class="d-inline-block align-text-top"
+                        style="padding-left: 40px;">
+                </a>
+                <a href="/Html/SignIn.html" style="text-decoration: none;">
+                    <h6 style="margin-right: 40px;;color: rgb(6, 5, 5);">Sign Out</h6>
+                </a>
+            </div>
+        </nav>
+    </div>
+    <div class="section1">
+        <div class="container">
+            <p style="margin-left: -18px;">STEP 3 OF 3</p>
+            <h1 style="margin-left: -18px;">Set up your credit or debit<br> card</h1>
+            <div class="sect1" style="margin-left: -18px;">
+                <img src="/Images/visa.png" class="img1">
+                <img src="/Images/mastercard.png" class="img1">
+                <img src="/Images/amex.jpg" class="img1">
+                <img src="/Images/dinersclub.png" class="img1">
+            </div>
+        </div>
+    </div>
+    <div class="section2">
+        <div class="inp">
+            <input type="text" placeholder="Card Number" class="input1" style="margin-bottom: 8px;">
+            <div class="Card">
+                <div class="box"></div>
+                <div class="box1"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="section3">
+        <div class="expiry">
+            <input type="text" placeholder="Expiration date" class="exp">
+        </div>
+        <div class="Cvv">
+            <input type="text" placeholder="Cvv" style="height: 50px; width: 200px;margin-left: -19px;">
+            <div class="question">
+                <div class="quest"></div>
+                <div class="que">
+                    <h6>?</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section4">
+        <input type="text" placeholder="First Name" class="fname"
+            style="height: 50px; width: 430px;margin-bottom: 8px;"><br>
+        <input type="text" placeholder="Last Name" class="lame" style="height: 50px; width: 430px;">
+    </div>
+    <div class="section5">
+        <h6 style="margin-left: 10px;">
+            ₹ 199/ Month <br>
+            Basic
+        </h6>
+        <div class="sec5a">
+            <a href="signup4.html" style="text-decoration: none;">Change</a>
+        </div>
+    </div>
+    <div class="section6">
+        <p>Any payment above ₹2000 shall need additional authentication.</p>
+        <p>By checking the checkbox below, you agree to our <a href="#">Terms of Use,Privacy<br>
+                Statement ,</a>and that you
+            are over 18 . Netflix weill automatically continue
+            your membership and change the membership fee (currently ₹199 / month)
+            to your payment method untill you cancel . You may cancel at any time to
+            avoid future charges. </p>
+    </div>
+    <div class="form-check" style="margin-left: 500px;margin-top: 80px;">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+            style="width: 20px;height: 20px;">
+        <label class="form-check-label" for="flexCheckDefault">
+            I agree .
+        </label>
+    </div>
+    <div class="section7">
+        <button type="button" class="btn2">Start Your membership</button>
+    </div>
+    <div class="footer">
+        <div class="foot1">
+            <p style="color: white;">Questions? Call 000-800-919-1694</p><br>
+            <a href="FAQ.html">FAQ</a><br><br>
+            <a href="FAQ.html">Cookie Preference</a><br><br>
+        </div>
+        <div class="foot2">
+            <a href="help.html">Help Centre</a><br><br>
+            <a href="help.html">Corporate Information</a>
+        </div>
+        <div class="foot3">
+            <a href="help.html">Terms of use</a>
+        </div>
+        <div class="foot4">
+            <a href="help.html">Privacy</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

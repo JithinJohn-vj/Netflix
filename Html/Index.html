@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>
+            Netflix India
+        
+    </title>
+    <link rel="icon" href="/" type="image/x-icon"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            position: fixed;
+            display: flex;
+            top: 0;
+            width: 1000px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+        }
+
+        .nav .logo {
+            height: 60px;
+            width: 250px;
+            margin-top: 15px;
+            margin-left: 100px;
+        }
+
+        .nav ul{
+            list-style: none;
+            float: right;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            margin-left: 600px;
+            margin-top: 20px;
+            padding-left: 200px;
+        }
+
+
+        .container {
+            background-image: url(/Images/image8.jpeg);
+            background-size: cover;
+            filter: brightness(70%);
+        }
+
+        select {
+            width: 120px;
+            height: 30px;
+            border-radius: 5px;
+            background-color: rgb(32, 30, 30);
+            color: white;
+            font-size: larger;
+        }
+
+        .btn1 {
+            width: 80px;
+            height: 30px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+            margin-left: 30px;
+            font-size: medium;
+        }
+
+        .section1 h1 {
+            font-size: 50px;
+            color: white;
+            margin-left: 100px;
+            text-align: center;
+        }
+
+        .text1 {
+            margin-left: 400px;
+            margin-top: 30px;
+            width: 350px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: rgb(42, 38, 38);
+            color: rgb(65, 61, 61);
+            font-size: large;
+            font-weight: 300;
+            text-decoration: none;
+            padding-left: 40px;
+        }
+
+        .btn2 {
+            width: 200px;
+            height: 50px;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            font-size: larger;
+        }
+
+        .space1,
+        .space2,
+        .space3,
+        .space4,
+        .space5,
+        .space6 {
+            background-color: slategray;
+            border: 6px solid rgb(79, 76, 76);
+        }
+
+        .section2,
+        .section3,
+        .section4,
+        .section5,
+        .section7 {
+            background-color: rgb(2, 2, 2);
+            height: 500px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+        }
+
+        .section6 {
+            background-color: rgb(2, 2, 2);
+            height: 500px;
+            color: white;
+            padding-top: 50px;
+        }
+
+        .dropbtn,
+        .dropbtn1,
+        .dropbtn2,
+        .dropbtn3,
+        .dropbtn4,
+        .dropbtn5 {
+            background-color: #414345;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            width: 1200px;
+            text-align: left;
+        }
+
+        .dropbtn:hover,
+        .dropbtn:focus,
+        .dropbtn1:hover,
+        .dropbtn1:focus,
+        .dropbtn2:hover,
+        .dropbtn2:focus,
+        .dropbtn3:hover,
+        .dropbtn3:focus,
+        .dropbtn4:hover,
+        .dropbtn4:focus,
+        .dropbtn5:hover,
+        .dropbtn5:focus {
+            background-color: #444648;
+        }
+
+        .dropdown,
+        .dropdown1,
+        .dropdown2,
+        .dropdown3,
+        .dropdown4,
+        .dropdown5 {
+            position: relative;
+            display: inline-block;
+            width: 800px;
+            margin-top: 20px;
+            margin-left: 100px;
+        }
+
+        .dropdown-content,
+        .dropdown-content1,
+        .dropdown-content2,
+        .dropdown-content3,
+        .dropdown-content4,
+        .dropdown-content5 {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a,
+        .dropdown-content1 a,
+        .dropdown-content2 a,
+        .dropdown-content3 a,
+        .dropdown-content4 a,
+        .dropdown-content5 a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown a:hover,
+        .dropdown1 a:hover,
+        .dropdown2 a:hover,
+        .dropdown3 a:hover,
+        .dropdown4 a:hover,
+        .dropdown5 a:hover {
+            background-color: #ddd;
+        }
+
+        .show {
+            display: block;
+        }
+        ::placeholder
+        {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="height: 800px;">
+        <div class="nav">
+            <img src="/Images/logo.png" class="logo">
+            <ul>
+                <select name="language-picker-select" id="language-picker-select">
+                    <option lang="de" value="deutsch">Deutsch</option>
+                    <option lang="en" value="english" selected>English</option>
+                    <option lang="fr" value="francais">Français</option>
+                    <option lang="it" value="italiano">Italiano</option>
+                </select>
+               <a href="SignIn.html"><button type="button" class="btn1">Sign in</button></a>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="section1">
+                <h1 style="padding-top: 300px;">The biggest Indian hits. Ready to watch here <br>from ₹ 149.</h1>
+            </div>
+            </h1>
+            <h4 style="margin-left: 600px;color: white; font-size: 25px; padding-top: 10px;">Join today. Cancel anytime.
+            </h4>
+            <p style="margin-left: 400px;color: white;font-size: 25px;padding-top: 10px;">Ready to watch? Enter your
+                email to create or restart your membership.</p>
+            <input type="text" placeholder="Email Address" class="text1" required style="color: white;">
+            <a href="/Html/Signup.html"><input type="button" class="btn2" value="Get Started"></a>
+        </div>
+    </div>
+    <div class="space1">
+
+    </div>
+    <div class="section2">
+        <div class="para2">
+            <h2 style="margin-top: 100px; font-size: 60px;">Enjoy on your TV</h2>
+            <p style="font-size: xx-large;">Watch on smart TVs, PlayStation, Xbox, Chromecast, <br>Apple TV, Blu-ray
+                players and more.</p>
+        </div>
+        <div class="gif">
+            <img src="/Images/gif2.gif" class="gif1"
+                style="height: 400px; width: 800px; margin-left: -600px;margin-top: 30px;">
+        </div>
+    </div>
+    <div class="space2">
+
+    </div>
+    <div class="section3">
+        <div class="gif3">
+            <img src="/Images/gif3.gif" style="height: 400px; width: 600px; margin-left: -150px;margin-top: 30px;">
+        </div>
+
+        <div class="para3">
+            <h2 style="margin-top: 100px; font-size: 50px; margin-left: -300px;">Download your shows<br> to watch
+                offline</h2>
+            <p style="font-size: 25px;margin-left: -300px;margin-top: 20px;">Save your favourites easily and always
+                have <br>something to watch.</p>
+        </div>
+    </div>
+    <div class="space3">
+
+    </div>
+    <div class="section4">
+        <div class="para4">
+            <h2 style="margin-top: 150px; font-size: 50px; margin-left: 100px;">Watch everywhere</h2>
+            <p style="font-size: 25px;margin-left: 100px;margin-top: 30px;">Stream unlimited movies and TV shows on
+                your <br>phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="gif4">
+            <img src="/Images/gif5.gif" style="height: 400px; width: 700px; margin-left: -150px;margin-top: 30px;">
+        </div>
+    </div>
+    <div class="space4">
+
+    </div>
+    <div class="section5">
+        <div class="gif6">
+            <img src="/Images/image3.png" style="height: 400px; width: 600px; margin-left: -50px;margin-top: 30px;">
+        </div>
+        <div class="para5">
+            <h2 style="margin-top: 150px; font-size: 50px; margin-left: -250px;">Create profiles for kids</h2>
+            <p style="font-size: 20px;margin-left: -250px;margin-top: 30px;">Send children on adventures with their
+                favourite<br> characters in a space made just for them—free <br>with your membership.</p>
+        </div>
+    </div>
+    <div class="space5">
+
+    </div>
+    <div class="section6" style="height: 700px;">
+        <h1 style="font-size: 50px;text-align: center;">Frequently Asked Questions</h1>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">What Is Netflix ?</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="">Netflix is a streaming service that offers a wide variety of award-winning TV
+                    shows, movies, anime, documentaries and more – on thousands of internet-connected devices.<br>
+
+                    You can watch as much as you want, whenever you want, without a single ad – all for one low
+                    monthly price. There's always something new to discover, and new TV shows and movies are
+                    added every week!</a>
+
+            </div>
+        </div>
+        <div class="dropdown1">
+            <button onclick="myFunction()" class="dropbtn1">how Much does Netflix Cost ?</button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="">Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for
+                    one
+                    fixed monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+
+                </a>
+
+            </div>
+        </div>
+        <div class="dropdown2">
+            <button onclick="myFunction()" class="dropbtn1">how Much does Netflix Cost ?</button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="">
+                    Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                    monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts.
+            </div>
+        </div>
+        <div class="dropdown3">
+            <button onclick="myFunction()" class="dropbtn1">Where can I Watch ?</button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="">Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                    netflix.com from your personal computer or on any internet-connected device that offers the Netflix
+                    app,
+                    including smart TVs, smartphones, tablets, streaming media players and game consoles.
+
+                    You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads
+                    to
+                    watch while you're on the go and without an internet connection. Take Netflix with you anywhere.
+                </a>
+
+            </div>
+        </div>
+        <div class="dropdown4">
+            <button onclick="myFunction()" class="dropbtn1">What Can I Watch On Netflix ?</button>
+            <div id="myDropdown1" class="dropdown-content1">
+                <a href="">Netflix has an extensive library of feature films, documentaries, TV shows, anime,
+                    award-winning
+                    Netflix originals, and more. Watch as much as you want, anytime you want.
+                </a>
+            </div>
+        </div>
+        <div class="dropdown5">
+            <button onclick="myFunction()" class="dropbtn5">Is Netflix Is Good for Kids ?</button>
+            <div id="myDropdown5" class="dropdown-content5">
+                <a href="">The Netflix Kids experience is included in your membership to give parents control while kids
+                    enjoy family-friendly TV shows and films in their own space.
+
+                    Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                    content kids can watch and block specific titles you don’t want kids to see. </a><br>
+
+            </div>
+        </div>
+        <div class="para6">
+            <h3 style="text-align: center;padding-top: 30px;">Ready to watch? Enter your email to create or restart your
+                membership.</h3>
+            <input type="text" placeholder="Email Address" class="text1" required
+                style="margin-left: 400px;color: white;">
+            <input type="button" class="btn2" value="Get Started  >">
+        </div>
+    </div>
+    <div class="space6">
+
+    </div>
+    <div class="section7" style="height: 300px;">
+        <div class="sect1">
+            <h3>Questions? Call 000-800-919-1694</h3><br><br>
+            <a href="FAQ.html" style="color: white;">FAQ</a><br><br>
+            <a href="FAQ.html" style="color: white;">Investor Relations</a><br><br>
+            <a href="FAQ.html" style="color: white;">Privacy</a><br><br>
+            <a href="FAQ.html" style="color: white;">Speed Test</a><br><br>
+            <ul>
+                <select name="Laguage">
+                    <option value="English">English</option>
+                    <option value="hindi">हिंदी</option>
+                </select>
+
+            </ul><br>
+            <p>Netflix India</p>
+        </div>
+        <div class="sect2">
+            <a href="FAQ.html" style="color: white;">Help Centre</a><br><br>
+            <a href="FAQ.html" style="color: white;">Jobs</a><br><br>
+            <a href="FAQ.html" style="color: white;">Cookie Preference</a><br><br>
+            <a href="FAQ.html" style="color: white;">Legal Notices</a><br><br>
+        </div>
+        <div class="sect3">
+            <a href="FAQ.html" style="color: white;">Accounts</a><br><br>
+            <a href="FAQ.html" style="color: white;">Way to Watch</a><br><br>
+            <a href="FAQ.html" style="color: white;">Corporate Informations</a><br><br>
+            <a href="FAQ.html" style="color: white;">Only on Netflix</a><br><br>
+        </div>
+        <div class="sect4">
+            <a href="FAQ.html" style="color: white;">Media Centre</a><br><br>
+            <a href="FAQ.html" style="color: white;">Terms of Use</a><br><br>
+            <a href="FAQ.html" style="color: white;">Contact Us</a><br><br>
+        </div>
+    </div>
+    </div>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown", "myDropdown1").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn', '.dropbtn1')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content", "dropdown-content1");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0);
+    position: absolute;
+}
+
+.logo {
+    width: 180px;
+    height: 40px;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+.img1
+{
+    background-size: cover;
+    width: 100%;
+}
+.sign
+{
+    margin-top: -50px;
+    margin-left: 1300px;
+    font-size: x-large;
+}
+.btn
+{
+    width: 400px;
+    height: 50px;
+    margin-left: -80px;
+    margin-top: 20px;
+    background-color:blue;
+}
+.section2
+{
+    border: 2px solid black;
+    background-color: white;
+    margin-left: 450px;
+    border: 1px;
+    position: absolute;
+    padding-top: 20px;
+    width: 480px;
+    height: 500px;
+    margin-top: -700px;
+}
+.inp
+{
+    width: 400px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 0px;
+}
+.rad2
+{
+    margin-top: 40px;
+    margin-left: 60px;
+}
+.radi2
+{
+    width: 60px;
+    height: 30px;
+}
+.rad2
+{
+    margin-left: 60px;
+    margin-top: 5px;
+}
+::placeholder
+{
+    padding-left: 7px;
+}
+.section2 p,h3{
+    margin-left: 40px;
+    padding-top: 5px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+.cant
+{
+    margin-left: 45px;
+}
+label{
+    margin-top: 5px;
+    margin-left: 10px;
+   
+}
+.pro
+{
+    margin-top: -190px;
+    color: rgb(103, 97, 97);
+    margin-left: 450px;
+}
+.pro a{
+    color: rgb(103, 97, 97);
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #b8b8b8;
+    margin-top: 140px;
+    opacity: 0.9;
+    height: 200px;
+    padding-top: 20px;
+}
+
+.foot1 a,
+.foot2 a,
+.foot3 a,
+.foot4 a {
+    text-decoration: none;
+    color: white;
+}
+
+.section option {
+    width: 100px;
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    margin-top: 140px;
+    opacity: 0.9;
+    height: 250px;
+    padding-top: 20px;
+}
+
+.foot1 a,
+.foot2 a,
+.foot3 a,
+.foot4 a {
+    text-decoration: none;
+    color: rgb(79, 71, 71);
+}
+
+.section option {
+    width: 100px;
+}
+
+select {
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: rgb(83, 77, 77);
+}
+.foot1 ul{
+    margin-left: -30px;
+}

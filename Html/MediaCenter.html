@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/Css/MediaCenter.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <title>Media Center</title>
+</head>
+
+<body>
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <img src="/Images/logo.png" class="logo1">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <h5 style="color: white;margin-left: 20px;margin-top: 5px;">Media Center</h5>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent"
+          style="margin-left: 360px;padding-left: 20px;">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav1">
+            <li class="nav-item ">
+              <button class="btn btn-primary dropdown-toggle btn1" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
+                style="background-color: transparent; border-color: transparent;">English</button>
+              <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel"
+                style="height: 550px;">
+                <div class="offcanvas-header" style="height: 150px; background-color: rgb(30, 28, 28);">
+                  <h5 id="offcanvasTopLabel"></h5>
+                  <ul style="width: 100%; margin-top: -80px;">
+                    <li>
+                      <nav class="navbar navbar-expand-lg ">
+                        <div class="container-fluid">
+                          <img src="/Images/logo.png" class="logo1">
+                          <h5 style="color: white;margin-left: 10px;margin-top: 5px;">Media Center</h5>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 320px;">
+                              <li class="nav-item">
+                                <button class="btn btn-primary dropdown-toggle lang1" type="button"
+                                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
+                                  style="background-color: transparent; border-color: transparent;">English</button>
+                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                                  aria-labelledby="offcanvasTopLabel">
+                                  <div class="offcanvas-header">
+                                    <h5 id="offcanvasTopLabel"></h5>
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                      aria-label="Close" style="margin-left: 1000px;"></button>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    ...
+                                  </div>
+                              <li class="nav-item">
+                                <button class="btn btn-primary dropdown-toggle btn2" type="button"
+                                  data-bs-toggle="offcanvas" data-bs-target="#offcanvasCount1"
+                                  aria-controls="offcanvasCount1"
+                                  style="background-color: transparent; border-color: transparent;"><img
+                                    src="/Images/indian-flag-waving.png" class="india">India</button>
+                                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasCount1"
+                                  aria-labelledby="offcanvasCountLabel" style="height: 600px;">
+                                  <div class="offcanvas-header1"
+                                    style="height: 150px;background-color: rgb(34, 29, 29);">
+                                    <h5 id="offcanvasCountLabel1"></h5>
+                                  </div>
+                                  <div class="offcanvas-body">
+                                    ...
+                                  </div>
+                              </li>
+                              <li class="nav-item">
+                                <button type="button" class="btn btn-secondary bt1"
+                                  style="background-color: transparent; border-color: transparent;">Newsroom
+                                  <div class="new" style="margin-left: 100px;margin-top: -16px;">
+                                    <div class="bx1">
+                                      <div class="lin1"></div>
+                                    </div>
+                                    <div class="arrow"></div>
+                                  </div>
+                                </button>
+                              </li>
+                              <li class="nav-item ">
+                                <div class="dropdown">
+                                  <button class="btn btn-secondary dropdown-toggle bt2" type="button"
+                                    id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"
+                                    style="background-color: transparent;border-color: transparent;">
+                                    Resources
+                                  </button>
+                                  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2"
+                                    style="width: 200px;height: 100px;">
+                                    <li><a class="dropdown-item " href="#" style="height: 40px;">Company assets
+                                        <div class="new" style="margin-left: 130px;margin-top: -18px;">
+                                          <div class="bx1">
+                                            <div class="lin1"></div>
+                                          </div>
+                                          <div class="arrow"></div>
+                                        </div>
+                                      </a></li>
+                                    <li><a class="dropdown-item" href="#" style="height: 40px;">About Netflix
+                                        <div class="new" style="margin-left: 132px;margin-top: -18px;">
+                                          <div class="bx1">
+                                            <div class="lin1"></div>
+                                          </div>
+                                          <div class="arrow"></div>
+                                        </div>
+                                      </a></li>
+                                </div>
+                              </li>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn btn-secondary bt3"
+                        style="background-color: black;">Apply</button>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn btn-secondary bt4"
+                        style="background-color: red;border-color: transparent;">Press Log In</button>
+                    </li>
+                    <li class="nav-item">
+                      <div class="search1" style="margin-left: 10px; margin-top: 10px;">
+                        <div class="circle1"></div>
+                        <div class="line3">
+                        </div>
+                      </div>
+                      <div class="search-box" id="searchBox">
+                        <input type="text" placeholder="Search..." id="searchInput">
+                        <button id="searchButton">Search</button>
+                      </div>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>
+    </nav>
+
+  </div>
+  <div class="close1">
+    <h5 style="margin-left: -110px;color: white;position: fixed;margin-top: -10px;">What language do you speak?</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"
+      style="margin-left: 700px;"></button>
+  </div>
+  <div class="offcanvas-body" style="background-color: black; color: white;">
+    <div class="container1">
+      <div class="row">
+        <div class="col">
+          <button type="button" class="buto1">اللغة العربية</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">Bahasa Indonesia</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">română</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="buto1">简体中文</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">italiano</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">Español (LatAm)</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="buto1">繁體中文</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">日本語</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">Español (España)</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="buto1">English</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">한국어</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">ไทย</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="buto1">Français</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">polski</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">Türkçe</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="buto1">Deutsch</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">Português (Brasil)</button>
+        </div>
+        <div class="col">
+          <h6></h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button type="button" class="buto1">Ελληνικά</button>
+        </div>
+        <div class="col">
+          <button type="button" class="buto1">Português (Portugal)</button>
+        </div>
+        <div class="col">
+          <h6></h6>
+        </div>
+      </div>
+    </div>
+    <li class="nav-item">
+      <div class="count1">
+        <button class="btn btn-primary dropdown-toggle btn2" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasCount" aria-controls="offcanvasCount"
+          style="background-color: transparent; border-color: transparent;"><img src="/Images/indian-flag-waving.png"
+            class="india">India</button>
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasCount" aria-labelledby="offcanvasCountLabel"
+          style="height: 520px;background-color: black;">
+          <div class="offcanvas-header" style="height: 150px;background-color: rgb(17, 16, 16);">
+            <h5 id="offcanvasCountLabel"></h5>
+            <nav class="navbar navbar-expand-lg " style="width: 100%; margin-top: -20px;">
+              <div class="container-fluid" style="margin-top: -65px;">
+                <img src="/Images/logo.png" class="logo3">
+                <h5 style="color: white;margin-left: 10px;">Media Center</h5>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 360px;">
+                    <li class="nav-item">
+                      <button class="btn btn-primary dropdown-toggle lang1" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"
+                        style="background-color: transparent; border-color: transparent;">English</button>
+                      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                        aria-labelledby="offcanvasTopLabel">
+                        <div class="offcanvas-header">
+                          <h5 id="offcanvasTopLabel"></h5>
+                          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close" style="margin-top: 0px;"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                          ...
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <button class="btn btn-primary dropdown-toggle btn2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasCount" aria-controls="offcanvasCount"
+                        style="background-color: transparent; border-color: transparent;"><img
+                          src="/Images/indian-flag-waving.png" class="india">India</button>
+                      <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasCount"
+                        aria-labelledby="offcanvasCountLabel" style="height: 600px;">
+                        <div class="offcanvas-header" style="height: 150px;background-color: rgb(34, 29, 29);">
+                          <h5 id="offcanvasCountLabel"></h5>
+                        </div>
+                        <div class="offcanvas-body">
+                          ...
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn btn-secondary bt1"
+                        style="background-color: transparent; border-color: transparent;">Newsroom
+                        <div class="new" style="margin-left: 100px;margin-top: -16px;">
+                          <div class="bx1">
+                            <div class="lin1"></div>
+                          </div>
+                          <div class="arrow"></div>
+                        </div>
+                      </button>
+                    </li>
+                    <li class="nav-item ">
+                      <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle bt2" type="button" id="dropdownMenuButton2"
+                          data-bs-toggle="dropdown" aria-expanded="false"
+                          style="background-color: transparent;border-color: transparent;">
+                          Resources
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2"
+                          style="width: 200px;height: 100px;">
+                          <li><a class="dropdown-item " href="#" style="height: 40px;">Company assets
+                              <div class="new" style="margin-left: 132px;margin-top: -18px;">
+                                <div class="bx1">
+                                  <div class="lin1"></div>
+                                </div>
+                                <div class="arrow"></div>
+                              </div>
+                            </a></li>
+                          <li><a class="dropdown-item" href="#" style="height: 40px;">About Netflix
+                              <div class="new" style="margin-left: 132px;margin-top: -18px;">
+                                <div class="bx1">
+                                  <div class="lin1"></div>
+                                </div>
+                                <div class="arrow"></div>
+                              </div>
+                            </a></li>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn btn-secondary bt3"
+                        style="background-color: black;">Apply</button>
+                    </li>
+                    <li class="nav-item">
+                      <button type="button" class="btn btn-secondary bt4"
+                        style="background-color: red;border-color: transparent;">Press Log In</button>
+                    </li>
+                    <li class="nav-item">
+                      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                      aria-controls="offcanvasRight" style="background-color: transparent;border-color: transparent;">
+                      <div class="search1" style="margin-top: -8px; margin-left: -10px;">
+                          <div class="circle1"></div>
+                          <div class="line3">
+                          </div>
+                        </div>
+                  </button>
+                      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas2" aria-labelledby="offcanvasLabel2" style="width: 1200px; height: 80px; background-color: rgb(35, 32, 32);">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasLabel2"></h5>
+                            <div class="search1" style="margin-left: -10px; margin-top: -25px;">
+                                <div class="circle1"></div>
+                                <div class="line3"></div>
+                            </div>
+                            <input type="text" class="text1" placeholder="Search" id="myInput2">
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                        </div>
+                    </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <h5 style="margin-left: 560px;color: white;position: fixed;margin-top: 100px;">What country do you cover?
+            </h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+
+          </div>
+          <div class="offcanvas-body" style="background-color: rgb(3, 3, 3);height: 300px;">
+            <p style="color: white;text-align: center;font-size: small;margin-top: 200px;">Select a country to
+              see
+              information specific to your
+              coverage region.</p>
+            <div class="dropdown" style="margin-left: 500px;">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                data-bs-toggle="dropdown" aria-expanded="false"
+                style="width: 400px; background-color: transparent;"><img src="/Images/indian-flag-waving.png"
+                  class="india">
+                India<span style="margin-left: 280px;"></span>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2"
+                style="width: 400px; max-height: 200px; overflow-y: auto; background-color: rgb(31, 29, 29); position: sabsolute;">
+                <li><a class="dropdown-item" href="#">Åland Islands</a></li>
+                <li><a class="dropdown-item" href="#">Afghanistan</a></li>
+                <li><a class="dropdown-item" href="#">Albania</a></li>
+                <li><a class="dropdown-item" href="#">Algeria</a></li>
+                <li><a class="dropdown-item" href="#">American Samoa</a></li>
+                <li><a class="dropdown-item" href="#">Andorra</a></li>
+
+              </ul>
+            </div>
+            <img src="/Images/map2.png" class="map">
+          </div>
+        </div>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn btn-secondary btn3"
+        style="background-color: transparent; border-color: transparent; margin-top: -3px;"> Newsroom
+        <div class="new" style="margin-left: 100px;margin-top: -16px;">
+          <div class="bx1">
+            <div class="lin1"></div>
+          </div>
+          <div class="arrow"></div>
+        </div>
+      </button>
+    </li>
+    <li class="nav-item ">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle btn4 " type="button" id="dropdownMenuButton2"
+          data-bs-toggle="dropdown" aria-expanded="false"
+          style="background-color: transparent; border-color: transparent;">
+          Resources
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2"
+          style="width: 200px;height: 100px;">
+          <li><a class="dropdown-item " href="#" style="height: 40px;">Company Assets
+              <div class="new" style="margin-left: 132px;margin-top: -18px;">
+                <div class="bx1">
+                  <div class="lin1"></div>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </a></li>
+          <li><a class="dropdown-item" href="#" style="height: 40px;">About Netflix
+              <div class="new" style="margin-left: 132px;margin-top: -18px;">
+                <div class="bx1">
+                  <div class="lin1"></div>
+                </div>
+                <div class="arrow"></div>
+              </div>
+            </a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn btn-secondary btn5" style="background-color: black;">Apply</button>
+    </li>
+    <li class="nav-item">
+      <button type="button" class="btn btn-secondary btn6"
+        style="background-color: red; border-color: transparent;">Press Log In</button>
+    </li>
+    <li class="nav-item">
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight" style="background-color: transparent;border-color: transparent;">
+      <div class="search1" style="margin-top: -8px; margin-left: -10px;">
+          <div class="circle1"></div>
+          <div class="line3">
+          </div>
+        </div>
+  </button>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel"
+      style="width: 1200px;height: 80px;  background-color: rgb(35, 32, 32);">
+      <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel"></h5>
+          <div class="search1" style="margin-left: -10px;margin-top: -25px;">
+              <div class="circle1"></div>
+              <div class="line3">
+              </div>
+            </div>
+          <input type="text" class="text1" placeholder="Search" id="myInput" >
+         
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          ...
+      </div>
+  </div>
+    </li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+  <h1 class="disc">Discover stories and <br>experiences to share with<br> India.</h1>
+  <div class="inp">
+    <div class="place">
+      <input type="text" placeholder="Search for Netflix titles and news" class="inp1">
+      <div class="search">
+        <div class="circle"></div>
+        <div class="line1">
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="section2">
+    <h3 style="margin-left: 30px;padding-top: 30px;">I'm interested in covering titles releasing in</h3>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+        aria-expanded="false"
+        style="width: 130px;background-color: transparent;border-color: transparent;margin-left: 550px;margin-top: -75px;font-size:x-large;">
+        October
+      </button>
+      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2" style="width: 40px;">
+        <li><a class="dropdown-item " href="#">November</a></li>
+        <li><a class="dropdown-item" href="#">December</a></li>
+        <li><a class="dropdown-item" href="#">January</a></li>
+        <li><a class="dropdown-item" href="#">February</a></li>
+      </ul>
+    </div>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <button type="button" class="button1">
+          <div class="film" style="margin-top: 10px;margin-left: 5px;">
+            <div class="film1">
+              <div class="f1"></div>
+              <div class="f2"></div>
+              <div class="f3"></div>
+              <div class="f4"></div>
+              <div class="f5"></div>
+            </div>
+            <div class="film2"></div>
+          </div>
+          <h6 style="margin-top: -20px;margin-left: 5px;">Films</h6>
+        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <button type="button" class="button2">
+                <div class="series" style="margin-top: 10px;margin-left: 7px;">
+                  <div class="series1">
+                    <div class="series2"></div>
+                  </div>
+                  <div class="series3"></div>
+                  <div class="series4"></div>
+                </div>
+                <h6 style="margin-top: -23px;margin-left: 10px;">
+                  <h6>Series</h6>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="button3">
+                <div class="document" style="margin-left: -25px;">
+                  <div class="document">
+                    <div class="document1">
+                      <p style="margin-top: -15.5px;margin-left: 0.3px;color: black;">....</p>
+                      <p style="margin-top: -25px;margin-left: 0.3px;color: black;">....</p>
+                      <div class="document2"></div>
+                    </div>
+                  </div>
+                  <h6 style="margin-top: -20px;margin-left: 38px;">Documentary</h6>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="button4">
+                <h6>
+                  <div class="kids" style="margin-top: 10px;margin-left: 5px;">
+                    <div class="kids1">
+                      <div class="kid1"></div>
+                      <div class="kid2"></div>
+                    </div>
+                    <div class="kids2">
+                      <div class="kid1"></div>
+                      <div class="kid2"></div>
+                    </div>
+                    <div class="kids3">
+                      <div class="kid1"></div>
+                      <div class="kid2"></div>
+                    </div>
+                  </div>
+                  <h6 style="margin-top: -25px;margin-left: 10px;">Kids</h6>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="button5">
+                <div class="reality" style="margin-top: 15px;margin-left: 5px;">
+                  <div class="real1"></div>
+                  <div class="real2"></div>
+                </div>
+                <h6 style="margin-top: -15px;margin-left: 8px;">Reality</h6>
+              </button>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="button6">
+                <div class="stand" style="margin-top: 8px;margin-left: 5px;">
+                  <div class="stand1"></div>
+                  <div class="stand2"></div>
+                  <div class="stand3"></div>
+                </div>
+                <h6 style="margin-top: -20px;margin-left: 10px;">Stand-Up Comedy</h6>
+              </button>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <hr>
+
+  </div>
+  <div class="section3">
+    <table>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem;background-color: transparent;">
+              <img src="/Images/wingwomen.jpeg" class="card-img-top" alt="...">
+              <div class="card-body" style="background-color: transparent;">
+                <p class="card-text">November 1, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem;background-color: transparent">
+              <img src="/Images/locked-in.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 1, 2023.</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem;background-color: transparent">
+              <img src="/Images/nuvo.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 1, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/mysteries.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 1, 2023</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/allthelight.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 2, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/onimusha.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 2, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/nyad.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 2, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/dailydose.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 2, 2023</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/sly.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 3, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/sellingsunset.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 3, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/Ferry.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 3, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/blueeyesamurai.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 3, 2023</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/tailor.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 4, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/cyberbunker.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 4, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/robbie.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 4, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/billionire.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 4, 2023</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/escaping.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 5, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/killer.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 5, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/atthemoment.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 5, 2023</p>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="card" style="width: 18rem; background-color: transparent">
+              <img src="/Images/fame.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">November 5, 2023</p>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" class="btn btn-outline-secondary" style="margin-left: 550px;color: white;">Show 20 more in
+      november</button>
+  </div>
+  <div class="section4">
+    <h3 style="margin-left: 80px;padding-top: 30px;">Latest news</h3>
+    <div class="container" style="margin-top: 30px;">
+      <div class="row">
+        <div class="col">
+          <div class="card text-white" style="width: 400px; height: 300px;">
+            <img src="/Images/return stranger.png" class="card-img" alt="..."
+              style="width: 400px; height: 300px;margin-left: -21px;margin-top: -21px;">
+            <div class="card-img-overlay">
+              <h5 class="card-title" style="font-size: x-small;margin-top: 40px;">Global</h5>
+              <h3 class="card-text" style="font-size: x-large;">‘Stranger Things’ Day 2023: <br>Our Complete Preview Guide</h3>
+                <button type="button" class="btn btn-outline-primary"style="margin-top: 20px;color: white;border-color: white;">Readmore</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-white" style="width: 400px; height: 300px;">
+            <img src="/Images/allthe.jpeg" class="card-img" alt="..."
+              style="width: 400px; height: 300px;margin-left: -21px;margin-top: -21px;">
+            <div class="card-img-overlay">
+              <h5 class="card-title" style="font-size: x-small;margin-top: 30px;">Germany, Spain, Italy, Canada, United Kingdom (Great Britain), United States, France, Global</h5>
+              <h3 class="card-text" style="font-size: x-large;">Celebrating the Power of <br>Authenticity in 'All the Light We <br>Cannot See'</h3>
+              </h3>
+              <button type="button" class="btn btn-outline-primary" style="margin-top: 30px; color: white;border-color: white;">Readmore</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card text-white" style="width: 400px; height: 300px;">
+            <img src="/Images/stranger.jpeg" class="card-img" alt="..."
+              style="width: 400px; height: 300px;margin-left: -21px;margin-top: -21px;">
+            <div class="card-img-overlay">
+              <h5 class="card-title" style="font-size: x-small;margin-top: 30px;">Global, Brazil</h5>
+              <h3 class="card-text" style="font-size: x-large;">Friends Don’t Lie: The First<br> 'Stranger Things' Store in Latin<br> America Arrives in São Paulo on<br> November 14!</h3>
+              <button type="button" class="btn btn-outline-primary" style="margin-top: 20px;color: white;border-color: white;">Readmore</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button type="button" class="btn btn-outline-secondary" style="margin-top: 300px;margin-left: 550px;color: white;">Read more news from Newsroom</button>
+  </div>
+  <div class="section5">
+    <img src="/Images/redback.jpeg" class="redback">
+    <div class="sec1">
+      <h2 style="margin-left: 190px;">Looking for company assets?</h2>
+      <h5 style="margin-top: 20px;">Get more images and information about Netflix on our company site.</h5>
+      <button type="button" class="btn btn-outline-secondary" style="margin-left: 440px;margin-top: 20px;color: white;">Go to about Netflix</button>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container2" style="margin-left: 200px;">
+      <div class="row" style="padding-top: 30px;;">
+        <div class="col">
+      <p>Company</p>
+        </div>
+        <div class="col">
+         <p>Connect</p>
+        </div>
+        <div class="col">
+        <p>Legal</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+      <a href="#">
+        About Netflix</a>
+        </div>
+        <div class="col">
+         <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+        <a href="#">Terms and Conditions</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+      <a href="#">
+        Newsroom</a>
+        </div>
+        <div class="col">
+         <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+        <a href="#">Privacy</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+      <a href="#">
+        Company Assets</a>
+        </div>
+        <div class="col">
+         <a href="#">
+          <div class="twitter">
+
+          </div>
+          <div class="instagram" style="margin-left: 27px;">
+            <div class="insta1">
+              <div class="insta2"></div>
+            </div>
+          </div>
+          <div class="facebook" style="margin-top: -30px;margin-left: 65px;">
+            <div class="fb1"></div>
+            <div class="fb2"></div>
+            <div class="fb3"></div>
+          </div>
+          <div class="twitter" style="margin-top: -92px;margin-left: -37px;transform: rotate(-20deg);">
+            <div class="twit1"></div>
+            <div class="twit2"></div>
+            <div class="twit3"></div>
+            <div class="twit4"></div>
+            <div class="twit5"></div>
+            <div class="twit6"></div>
+            <div class="twit7"></div>
+            <div class="twit8"></div>
+        </div>
+         </a>
+        </div>
+        <div class="col">
+        <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+      <a href="#">
+        Start watching</a>
+        </div>
+        <div class="col">
+         <a href="#"></a>
+        </div>
+        <div class="col">
+        <a href="#"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: black;
+            height: 70px;
+        }
+
+        .line {
+            border-left: 3px solid white;
+            height: 30px;
+            margin-left: 180px;
+            margin-top: -37px;
+        }
+
+        .logo {
+            height: 3%;
+            width: 130px;
+            margin-top: 15px;
+            margin-left: 30px;
+        }
+
+        .help {
+            text-decoration: none;
+            color: white;
+            margin-left: 100px;
+            margin-top: -27px;
+            font-size: larger;
+        }
+
+        .join {
+            margin-left: 800px;
+            margin-top: -30px;
+            padding-left: 20px;
+        }
+
+        .join .btn1 {
+            width: 100px;
+            height: 30px;
+            border-radius: 4px;
+            border-color: whitesmoke;
+            background-color: black;
+            color: white;
+            border: 1px solid rgb(141, 137, 137);
+        }
+
+        .join .btn2 {
+            width: 100px;
+            height: 30px;
+            border-radius: 4px;
+            background-color: red;
+            color: white;
+            border: 1px solid black;
+        }
+        .sect1{
+            border-bottom: 3px solid white;
+            width: 610px;
+            padding: 15px;
+            padding-left: -16px;
+        }
+        
+        .sect {
+            border-bottom: 3px solid black;
+            width: 610px;
+            padding: 15px;
+            padding-left: -20px;
+
+        }
+
+        .sect a ,.sect1 a{
+            text-decoration: none;
+            font-size: larger;
+            color: black;
+        }
+
+        .section1 {
+            margin-left: 350px;
+            margin-top: 50px;
+
+        }
+
+        .btn3 {
+            width: 630px;
+            height: 40px;
+            margin-left: -15px;;
+            padding-left: 10px;
+            border-radius: 4px;
+        }
+
+        .nave {
+            margin-left: 300px;
+        }
+        select{
+            width: 150px;
+            height: 50px;
+            margin-top: 30px;
+            background-color: transparent;
+            color: rgb(228, 219, 219);
+            font-size: large;
+        }
+        .ft a
+        {
+            color: white;
+            text-decoration: none;
+        }
+        .ft{
+            margin-left: 500px;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #161819 0%, #240d18 100%);
+        }
+        .sect1{
+            margin-left: -2px;
+        }
+        .sect a:hover
+        {
+            text-decoration: underline;
+        }
+        .sect1 a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class=" navbar">
+            <div class="nave">
+                <div class="image">
+                    <img src="/Images/logo.png" class="logo">
+                </div>
+                <div class="line">
+
+                </div>
+                <div class="help">
+                    <a href="Helpcentre.html" class="help">Help Centre</a>
+                </div>
+            </div>
+            <div class="join">
+                <button type="button" class="btn1" style="margin-left: -40px;">Join Netflix</button>
+                <a href="signin.html"><button type="button" class="btn2" style="margin-left: 30px;">Sign In</button></a>
+            </div>
+        </div>
+        <div class="section1">
+            <div class="sect1">
+                <h1 style="margin-left: -10px;">Contact Us</h1><br>
+                <p style="margin-left: -10px;">Tell us more and we'll find the best solution for you</p><br>
+                <input type="text" placeholder="Describe your issue" class="btn3"><br>
+            </div><br>
+            <div class="sect2">
+                <h4 style="font-size: larger;">Quick Links</h4>
+            </div>
+            <div class="sect">
+                <a href="#">
+                    <p style="margin-left:-18px;">Content Grievances in India</p>
+                    <h3 style="margin-left: 600px; margin-top: -20px; color: red;">&gt;</h3>
+                </a>
+            </div>
+            <div class="sect">
+                <a href="#">
+                    <p style="margin-left:-18px;">Reset password</p>
+                    <h3 style="margin-left: 600px; margin-top: -20px; color: red;">&gt;</h3>
+                </a>
+            </div>
+            <div class="sect">
+                <a href="#">
+                    <p style="margin-left:-18px;">Update email</p>
+                    <h3 style="margin-left: 600px; margin-top: -20px; color: red;">&gt;</h3>
+                </a>
+            </div>
+            <div class="sect">
+                <a href="#">
+                    <p style="margin-left:-18px;">Get help signing in</p>
+                    <h3 style="margin-left: 600px; margin-top: -20px; color: red;">&gt;</h3>
+                </a>
+            </div>
+            <div class="sect">
+                <a href="#">
+                    <p style="margin-left:-18px;">Update payment method</p>
+                    <h3 style="margin-left: 600px; margin-top: -20px; color: red;">&gt;</h3>
+                </a>
+            </div>
+            <div class="sect1">
+                <a href="#">
+                    <p style="margin-left:-18px;">Request TV shows or movies</p>
+                    <h3 style="margin-left: 600px; margin-top: -20px; color: red;">&gt;</h3>
+                </a>
+            </div>
+        </div>
+        <div class="ft" style="padding-left: 350px;">
+            <ul>
+                <select name="language-picker-select" id="language-picker-select">
+                    <option lang="de" value="deutsch">Deutsch</option>
+                    <option lang="en" value="english" selected>English</option>
+                    <option lang="fr" value="francais">Français</option>
+                    <option lang="it" value="italiano">Italiano</option>
+                </select><br><br>
+            </ul>
+            <div class="ft1">
+                <a href="help.html">Terms of Use</a><br><br>
+                <a href="help.html">Privacy</a><br><br>
+            </div>
+            <div class="ft2">
+                <a href="help.html">Cookie Preferences</a><br><br>
+            </div>
+            <div class="ft3">
+                <a href="help.html">Corporate Information</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,668 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    height: 50px;
+}
+
+.logo {
+    height: 30px;
+    width: 130px;
+    margin-top: 8px;
+    margin-left: 100px;
+
+}
+
+.join {
+    margin-left: 1100px;
+    margin-top: -30px;
+}
+
+.btn1 {
+    margin-left: 20px;
+    background-color: red;
+    border-color: transparent;
+    font-size: medium;
+    border-radius: 3px;
+    height: 40px;
+    width: 75px;
+    color: white;
+}
+
+.btn2 {
+    text-decoration: none;
+    font-size: large;
+
+    color: red;
+}
+
+.image2 {
+    height: 400px;
+    width: 100%;
+}
+
+.head {
+    color: rgb(255, 254, 254);
+    margin-top: -290px;
+    text-align: center;
+    font-size: 45px;
+}
+.btn4
+{
+    width: 250px;
+    border-radius: 0px;
+    border: 2px solid whitesmoke;
+    height: 180px;
+    background-color: whitesmoke;
+    border-bottom: 20px solid red;
+    transition: background-color 0.3s;
+}
+.btn4:active, .btn4:focus {
+    border-bottom: 20px solid whitesmoke;
+    border-right: 1px solid rgb(212, 205, 205);
+    border-left: 1px solid rgb(212, 205, 205);
+}
+
+.settop .box1,
+.settop .box2,
+.settop .box3,
+.settop .circle,
+.settop .wifi1,
+.settop .wifi2,
+.settop .wifi3 {
+    border-color: black; 
+} 
+
+.btn4.active .settop .box1,
+.btn4.active .settop .box2,
+.btn4.active .settop .box3,
+.btn4.active .settop .wifi1,
+.btn4.active .settop .wifi2,
+.btn4.active .settop .wifi3 {
+    border-color: red; 
+}
+
+.btn4.active .settop .circle
+{
+    border-color: red;
+    background-color: red;
+}
+
+.box1
+{
+    border: 1px solid black;
+    margin-top: 60px;
+    border-radius: 4px;
+    width: 50px;
+    height: 10px;
+}
+.box2
+{
+    border: 1px solid black;
+    border-bottom: 0px;
+    border-top-left-radius: 3px solid black;
+    margin-top: -32px;
+    width: 50px;
+    height: 20px;
+    margin-left: px;
+    border-radius: 3px;
+}
+.box3
+{
+    width: 12px;
+    height: 32px;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-top: -22px;
+  background-color: white;
+}
+.circle
+{
+    border: 1px solid black;
+    background-color: black;
+    margin-top: -32px;
+    margin-left: 35px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+.wifi1{
+width: 8px;
+height: 2px;
+border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+border: 1px solid black;
+border-bottom: 0;
+margin-left: 32px;
+margin-top: -15px;
+}
+.wifi2{
+width: 13px;
+height: 4px;
+border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+border: 1px solid black;
+border-bottom: 0;
+margin-left: 29.5px;
+margin-top: -10px;
+}
+.wifi3{
+width: 18px;
+height: 5px;
+border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+border: 1px solid black;
+border-bottom: 0;
+margin-left: 27px;
+margin-top: -13px;
+}
+.btn4,.box1,.box2,.box3,.circle:active, 
+.btn4,.box1,.box2,.box3,.circle:focus 
+{
+    color:red;
+}
+
+.desktop .sec1,
+.desktop .sec2,
+.desktop.sec3,
+.desktop.circle1
+{
+    border-color: black; 
+} 
+
+.btn4.active .desktop .sec1,
+.btn4.active .desktop .sec2,
+.btn4.active .desktop .sec3
+ {
+    border-color: red; 
+}
+.btn4.active .desktop .circle1
+{
+    border-color: red;
+    background-color: red;
+}
+.btn4,.sec1,.sec2,.sec3,.circle1:active, 
+.btn4,.sec1,.sec2,.sec3,.circle1:focus 
+{
+    color:red;
+   
+}
+
+.sec1 {
+    border: 1px solid black;
+    width: 70px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+.sec2 {
+    border: 1px solid black;
+    margin-left: -20px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    width: 58px;
+    height: 10px;
+}
+
+.sec3 {
+    border: 1px solid black;
+    margin-top: -10px;
+    margin-left: 23px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 28px;
+    height: 10px;
+}
+.circle1
+{
+border: 1px solid black;
+margin-left: 35px;
+    background-color: black;
+    margin-top: -22px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+.smart1 {
+    border: 2px solid black;
+    margin-left: 100px;
+    border-radius: 5px;
+    width: 35px;
+    height: 45px;
+}
+
+.smart2 {
+    border: 2px solid black;
+    margin-top: -10px;
+    margin-left: 115px;
+    border-radius: 50%;
+    width: 4px;
+    height: 5px;
+}
+.phone1 {
+    border: 2px solid black;
+    margin-left: 100px;
+    border-radius: 5px;
+    width: 20px;
+    height: 30px;
+}
+
+.phone2 {
+    border: 2px solid black;
+    margin-top: -10px;
+    margin-left: 109px;
+    border-radius: 50%;
+    width: 4px;
+    height: 5px;
+}
+.phone{
+    margin-top: -35px;
+    margin-left: -25px;
+}
+
+.smartphone .smart1,
+.smartphone .smart2,
+.smartphone .phone1,
+.smartphone .phone2
+{
+    border-color: black; 
+} 
+
+.btn4.active .smartphone .smart1,
+.btn4.active .smartphone  .smart2,
+.btn4.active .smartphone  .phone1,
+.btn4.active .smartphone  .phone2
+ {
+    border-color: red; 
+}
+.btn4,.smart1,.smart2,.phone1,.phone2:active, 
+.btn4,.smart1,.smart2,.phone1,.phone2:focus 
+{
+    color:red;
+   
+}
+.lap1 {
+    border: 2px solid black;
+    border-bottom: 0px;
+    width: 50px;
+    height: 30px;
+    border-radius: 4px;
+    margin-left: 500px;
+}
+.lap2 {
+    border: 1.5px solid black;
+    width: 52px;
+    height: 1px;
+    border-radius: 8px;
+    margin-left: 499px;
+    margin-top: -2px;
+
+}
+.lap3 {
+    border: 2px solid black;
+    width: 58px;
+    height: 1px;
+    border-radius: 8px;
+    margin-left: 496px;
+    margin-top: 0.2.5px;
+}
+.laptop .lap1,
+.laptop .lap2,
+.laptop .lap3
+{
+    border-color: black; 
+} 
+
+.btn4.active .laptop .lap1,
+.btn4.active .laptop  .lap2,
+.btn4.active .laptop  .lap3
+ {
+    border-color: red; 
+}
+.btn4,.lap1,.lap22,.lap3:active, 
+.btn4,.lap1,.lap2,.lap3:focus 
+{
+    color:red;
+   
+}
+
+.desk1 {
+    border: 1px solid black;
+    width: 70px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+.desk2 {
+    border: 1px solid black;
+    margin-left: -25px;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    width: 58px;
+    height: 5px;
+}
+
+.desk3 {
+    border: 1px solid black;
+    margin-left: 18px;
+    margin-top: -10px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    width: 28px;
+    height: 10px;
+}
+.desk4
+{
+    border: 1px solid black;
+    margin-left: 19px;
+    border-radius: 3px;
+    width: 25px;
+    height: 7px;
+    margin-top: 2px;
+}
+.desk5
+{
+    border-left:0px;
+    margin-left: 25px;
+    border-bottom: 0px;
+    border-right: 0px;
+    border-top: 1px solid black;
+    margin-top: -5px;
+    width: 15px;
+}
+.desktop2 .desk1,
+.desktop2 .desk2,
+.desktop2 .desk3,
+.desktop2 .desk4,
+.desktop2 .desk5
+{
+    border-color: black; 
+} 
+
+.btn4.active .desktop2 .desk1,
+.btn4.active .desktop2 .desk2,
+.btn4.active .desktop2 .desk3,
+.btn4.active .desktop2 .desk4,
+.btn4.active .desktop2 .desk5
+ {
+    border-color: red; 
+}
+.btn4,.desk1,.desk,.desk3,.desk4,.desk5:active, 
+.btn4,.desk1,.desk,.desk3,.desk4,.desk5:focus 
+{
+    color:red;
+   
+}
+
+.play1
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+.play2
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: -43px;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+}
+.play3
+{
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: -15px;
+    margin-left: 28px;
+    width: 5px;
+    height: 5px;
+}
+.player
+{
+   border-color: red;
+}
+.section1
+{
+    height: 400px;
+}
+.section2
+{
+
+    height: 250px;
+    width: 100%;
+}
+
+.player .play1,
+.player .play2,
+.player .play3
+{
+    border-color: black; 
+} 
+
+.btn4.active .player .play1,
+.btn4.active .player .play2,
+.btn4.active .player .play3
+{
+    border-color: red; 
+}
+.btn4,.play1,.play2,.play3:active, 
+.btn4,.play1,.play2,.play3:focus 
+{
+    color:red;
+   
+}
+.row
+{
+    display: flex;
+    justify-content: space-around;
+}
+col
+{
+    border: 2px solid transparent;
+    height: 100px;
+    width: 100px;
+}
+.row h5{
+    color: black;
+}
+.img3
+{
+    width: 100%;
+    height: 350px;
+}
+.plug
+{
+    border-left: 4px solid red;
+    color: white;
+    font-size: xx-large;
+    height: 40px;
+    position: relative;
+    margin-left: 200px;
+    margin-top: -350px;
+}
+
+.btn4:hover {
+    background-color: lightgray; /* Change the background color on hover */
+}
+
+.btn4:active, .btn4:focus {
+    border-bottom: 20px solid whitesmoke;
+    border-right: 1px solid rgb(212, 205, 205);
+    border-left: 1px solid rgb(212, 205, 205);
+} 
+.img4
+{
+    width: 110px;
+    height: 150px;
+}
+.img5
+{
+    width: 170px;
+    height: 110px;
+    margin-top: 38px;
+    margin-left: 100px;
+}
+.btn5
+{
+    width: 170px;
+    height: 35px;
+    color: red;
+    border-radius: 3px;
+    border-color: red;
+    margin-left: 395px;
+    margin-top: 10px;
+    background-color: transparent;
+}
+.img6
+{
+    width: 110px;
+    height: 75px;
+    padding-top: -10px;
+}
+.image-section
+{
+    margin-left: 983px;
+    margin-top: -335px;
+}
+.img6:hover {
+    opacity: 0.7; 
+}
+.plug1
+{
+    border-left: 4px solid red;
+    color: white;
+    font-size: xx-large;
+    height: 40px;
+    position: relative;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+.img7
+{
+    width: 150px;
+    height: 170px;
+}
+
+.img7:hover {
+    opacity: 0.7; 
+}
+.tab3
+{
+    margin-left: 930px;
+    margin-top: -230px;
+}
+.plug3
+{
+    border-left: 2px solid red;
+    position: relative;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: -200px;
+
+}
+
+.image-section1
+{
+    margin-left: 900px;
+    margin-top: -190px;
+}
+.image-section2
+{
+    margin-left: 1000px;
+    margin-top: -190px;
+}
+.plug4
+{
+    border-left: 2px solid red;
+    font-size: xx-large;
+    color: white;
+    position: relative;
+    height: 40px;
+    margin-left: 205px;
+    margin-top: -300px;
+
+}
+.image-section4
+{
+    margin-left: 900px;
+    margin-top: -146px;
+}
+.plugs
+{
+    position: relative;
+    border-left: 2px solid red;
+    color: white;
+    font-size: xx-large;
+    height: 30px;
+    margin-top: -360px;
+    margin-left: 200px;
+}
+.foot1
+{
+    width: 200px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 120px;
+    font-size: small;
+    justify-content: space-around;
+}
+.foot2
+{
+    width: 420px;
+    display: flex;
+    font-size: small;
+    justify-content: space-around;
+    margin-left: 500px;
+    margin-top: 5px;
+}
+.foot3
+{
+    width: 350px;
+    display: flex;
+    font-size: small;
+    justify-content: space-around;
+    margin-left: 1000px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.ft1
+{
+    border-right: 2px solid black;
+    height: 15px;
+    padding-left: 20px;
+}
+.ft2{
+
+    border-right: 2px solid black;
+    height: 15px;
+}
+.footer h4
+{
+    color: rgb(74, 69, 69);
+}
+.footer2
+{
+    margin-top: 20px;
+    margin-left: 140px;
+    font-size: small;
+    
+}
+.footer2 a{
+    text-decoration: none;
+    color: rgb(74, 69, 69);
+}
+.img8
+{
+    width: 60px;
+    height: 60px;
+    margin-left: 1100px;
+    margin-top: -30px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Netflix
+    </title>
+    <link rel="icon" href="/Images/logo1.png" type="image/x-icon"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-image: url(/Images/image7.png);
+            background-repeat: repeat;
+            background-size: cover;
+
+        }
+
+        .nav {
+            position: fixed;
+            display: flex;
+            top: 0;
+            width: 100px;
+            height: 100px;
+            background: rgba(0, 0, 0, 0);
+            position: absolute;
+        }
+
+        .logo {
+            width: 150px;
+            height: 50px;
+            padding-left: 80px;
+            padding-top: 20px;
+        }
+
+        .border {
+            font-family: "Moonstone-Regular";
+            text-align: center;
+            position: absolute;
+            font-size: 16px;
+            font-style: normal;
+            margin-left: 500px;
+            margin-top: -900px;
+            border: 1px solid black;
+            border-radius: 4px;
+            width: 450px;
+            height: 650px;
+            background-color: black;
+            opacity: 0.9;
+        }
+
+        .border .inp {
+            width: 350px;
+            height: 50px;
+            font-size: 15px;
+            padding-left: 8px;
+            border-radius: 4px;
+            margin-top: 20px;
+            color: white;
+            background-color: #333;
+        }
+
+        .border .btn {
+            width: 350px;
+            height: 50px;
+            font-size: 20px;
+            color: white;
+            border-radius: 4px;
+            margin-top: 25px;
+            background-color: red;
+
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        ::placeholder {
+            color: white;
+        }
+
+        .boder p {
+            color: white;
+        }
+
+        .section {
+            display: flex;
+            justify-content: space-around;
+            background-color: #100e0e;
+            margin-top: -180px;
+            opacity: 0.9;
+            height: 160px;
+            padding-top: 20px;
+        }
+
+        .sect1 a,
+        .sect2 a,
+        .sect3 a,
+        .sect4 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .section1 option {
+            width: 100px;
+        }
+
+        select {
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid white;
+            background-color: transparent;
+            color: white;
+            font-size: large;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="height: 1000px;">
+        <div class="nav">
+            <img src="/Images/logo.png" class="logo">
+        </div>
+    </div>
+    <div class="border">
+        <h2 style="margin-right: 300px; font-size: 36px; margin-top: 50px;color: white;">Sign In</h2>
+        <input type="text" placeholder="Email or Phone Number" required class="inp"><br>
+        <input type="password" placeholder="Password" class="inp"><br>
+        <button class="btn">Sign In</button><br>
+        <div class="box">
+            <div class="check">
+                <input type="checkbox"> <label for="rememberMe" style="color: rgb(67, 63, 63);">Remember me</label>
+            </div>
+            <div>
+                <p style="color: rgb(50, 48, 48);">Need Help ?</p>
+            </div>
+        </div>
+        <p style="color: rgb(40, 38, 38);">New to Netflix ?<a href="SignUp.html"
+                style="text-decoration: none;font-size: x-large;color: white;margin-top: 10px;">SignUp</a> </p>
+        <p style="font-size: 10px
+        large;color: rgb(65, 62, 62);margin-top: 20px;">This page is protected by Google reCAPTCHA <br>to ensure you're
+            not a bot. <a href="learnmore.html">learn more</a> 
+        </p>
+    </div>
+    <div class="section">
+        <div class="sect1">
+            <p style="color: white;">Questions? Call 000-800-919-1694</p><br><br>
+            <a href="FAQ.html">FAQ</a><br><br>
+            <a href="FAQ.html">Cookie Preference</a><br><br>
+            <ul>
+                <select name="language-picker-select" id="language-picker-select">
+                    <option lang="de" value="deutsch">Deutsch</option>
+                    <option lang="en" value="english" selected>English</option>
+                    <option lang="fr" value="francais">Français</option>
+                    <option lang="it" value="italiano">Italiano</option>
+                </select>
+            </ul>
+        </div>
+        <div class="sect2">
+            <a href="help.html">Help Centre</a><br><br>
+            <a href="help.html">Corporate Information</a>
+        </div>
+        <div class="sect3">
+            <a href="help.html">Terms of use</a>
+        </div>
+        <div class="sect4">
+            <a href="help.html">Privacy</a>
+        </div>
+    </div>
+</body>
+
+</html>
